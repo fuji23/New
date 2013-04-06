@@ -2,6 +2,6 @@ $ git init - Ёта команда создаЄт в текущем каталоге
 			новый подкаталог с именем .git содержащий все необходимые 
 			файлы репозитори€ Ч основу Git-репозитори€.
 			
-$ git clone https://github.com/FujiF/Test_repo.git -  лонирование репозитори€.
+$ git clone https://github.com/FujiF/Test_repo.git -  лонирование репозитори€
 
 			
