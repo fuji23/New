@@ -1,3 +1,6 @@
+q - quit from info data
+:wq - quit from tag edit form
+
 $ git init - Ёта команда создаЄт в текущем каталоге 
 			новый подкаталог с именем .git содержащий все необходимые 
 			файлы репозитори€ Ч основу Git-репозитори€.
@@ -62,6 +65,9 @@ $ git remote rm [удал. сервер](Helper) - ”даление удалЄнного репозитори€
 $ git tag -a v1.4 -m 'my version 1.4' - јннотированные метки
 
 $ git show v1.4 - посмотреть данные метки вместе с коммитом
+
+$ git config --global alias.ci commit - ѕсевдонимы в Git
+
 
 
 
