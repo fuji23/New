@@ -68,6 +68,20 @@ $ git show v1.4 - посмотреть данные метки вместе с коммитом
 
 $ git config --global alias.ci commit - Псевдонимы в Git
 
+$ git branch branch_name - создадим новую ветку branch_name
+
+$ git checkout branch_name - перейдём на новую ветку branch_name
+$ git checkout -b branch_name -  создать ветку и сразу же перейти на неё
+
+$ git branch -d branch_name - удалить ветку
+
+$ git checkout master 
+$ git merge branch_name - Вы можете запустить тесты, убедиться, что решение 
+работает, и слить (merge) изменения назад в ветку master, чтобы включить их в продукт.
+
+$ git mergetool -  графический инструмент и покажет конфликтные ситуации
+
+
 
 
 
