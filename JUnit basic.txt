@@ -1,0 +1,58 @@
+
+Annotation 	Description
+
+@Test
+public void method()
+		The annotation @Test identifies that a method is a test method.
+@Before
+public void method() 	
+		This method is executed before each test. This method can prepare 
+		the test environment (e.g. read input data, initialize the class).
+@After
+public void method() 	
+		This method is executed after each test. This method can cleanup 
+		the test environment (e.g. delete temporary data, restore defaults). 
+		It can also save memory by cleaning up expensive memory structures.
+@BeforeClass
+public static void method()
+		This method is executed once, before the start of all tests. 
+		This can be used to perform time intensive activities, for example to 
+		connect to a database. Methods annotated with this annotation need to 
+		be defined as static to work with JUnit.
+@AfterClass
+public static void method() 	
+		This method is executed once, after all tests have been finished. 
+		This can be used to perform clean-up activities, for example to disconnect 
+		from a database. Methods annotated with this annotation need to be defined as static 
+		to work with JUnit.
+@Ignore 	
+		Ignores the test method. This is useful when the underlying code has been 
+		changed and the test case has not yet been adapted. Or if the execution time 
+		of this test is too long to be included.
+@Test (expected = Exception.class) 	
+		Fails, if the method does not throw the named exception.
+@Test(timeout=100) 	
+		Fails, if the method takes longer than 100 milliseconds. 
+		
+		
+Statement 		Description
+
+fail(String) 	
+		Let the method fail. Might be used to check that a certain part of the 
+		code is not reached. Or to have a failing test before the test code is implemented.
+assertTrue([message], boolean condition) 	
+		Checks that the boolean condition is true.
+assertsEquals([String message], expected, actual) 	
+		Tests that two values are the same. Note: for arrays the reference is checked 
+		not the content of the arrays.
+assertsEquals([String message], expected, actual, tolerance) 	
+		Test that float or double values match. The tolerance is the number of 
+		decimals which must be the same.
+assertNull([message], object) 	
+		Checks that the object is null.
+assertNotNull([message], object) 	
+		Checks that the object is not null.
+assertSame([String], expected, actual) 	
+		Checks that both variables refer to the same object.
+assertNotSame([String], expected, actual) 	
+		Checks that both variables refer to different objects. 
